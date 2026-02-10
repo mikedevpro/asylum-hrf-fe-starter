@@ -26,9 +26,5 @@ const router = createBrowserRouter([
 ]);
 
 export const App = () => {
-  return (
-    <div className='font-serif w-[100vw] h-[100vh] m-0 flex-c justify-between align-centre text-center min-h-screen secondary-c'>
-      <RouterProvider router={router} />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };

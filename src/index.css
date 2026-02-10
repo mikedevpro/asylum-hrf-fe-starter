@@ -26,3 +26,9 @@ body {
 .nav-btn {
    @apply text-[#E2F0F7] hover:border-[#E2F0F7] border-transparent border-2 px-3 py-2 rounded-xl
 }
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
