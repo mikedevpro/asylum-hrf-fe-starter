@@ -78,7 +78,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('time')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4 preview-img" />
+            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4 preview" />
             <p className="font-serif">Search Grant Rates Over Time</p>
           </button>
         </div>
@@ -103,12 +103,14 @@ export const LandingPage = () => {
         </div>
 
         {/* Decorative image (optional, since you imported it) */}
-        <div className="mt-14">
+        <div className="mt-14 flex justify-center">
+          <div className="w-full max-w-xl">
           <img
             src={paperStack}
             alt="Stack of papers"
-            className="mx-auto max-h-52 w-full max-w-4xl object-cover rounded-2xl"
+            className="w-full h-[220px] object-cover rounded-2xl"
           />
+        </div>
         </div>
 
         {/* Assignment text */}
