@@ -10,17 +10,17 @@ import { PageWrapper } from './components/layout/PageWrapper.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: pageWrapper(<LandingPage />),
+    element: PageWrapper(<LandingPage />),
     errorElement: <NotFoundPage />,
   },
   {
     path: '/graphs',
-    element: pageWrapper(<GraphsPage />),
+    element: PageWrapper(<GraphsPage />),
     errorElement: <NotFoundPage />,
   },
   {
     path: '/profile',
-    element: pageWrapper(<Profile />),
+    element: PageWrapper(<Profile />),
     errorElement: <NotFoundPage />,
   },
 ]);
