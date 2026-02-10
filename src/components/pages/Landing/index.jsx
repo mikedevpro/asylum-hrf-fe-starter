@@ -60,7 +60,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('office')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={barGraph} alt="Grant rates by office" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
+            <img src={barGraph} alt="Grant rates by office" className="mx-auto mb-4 preview-img" />
             <p className="font-serif">Search Grant Rates By Office</p>
           </button>
 
@@ -69,7 +69,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('nationality')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={pieChart} alt="Grant rates by nationality" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
+            <img src={pieChart} alt="Grant rates by nationality" className="mx-auto mb-4 preview-img" />
             <p className="font-serif">Search Grant Rates By Nationality</p>
           </button>
 
@@ -78,7 +78,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('time')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
+            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4 preview-img" />
             <p className="font-serif">Search Grant Rates Over Time</p>
           </button>
         </div>

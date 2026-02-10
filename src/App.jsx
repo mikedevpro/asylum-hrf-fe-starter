@@ -5,22 +5,22 @@ import { GraphsPage } from './components/pages/DataVisualizations/GraphsPage.jsx
 import { NotFoundPage } from './components/pages/NotFound/index.jsx';
 import * as React from 'react';
 import Profile from './components/pages/Profile/index.jsx';
-import { pageWrapper } from './components/layout/PageWrapper.jsx';
+import { PageWrapper } from './components/layout/PageWrapper.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: pageWrapper(<LandingPage />),
+    element: PageWrapper(<LandingPage />),
     errorElement: <NotFoundPage />,
   },
   {
     path: '/graphs',
-    element: pageWrapper(<GraphsPage />),
+    element: PageWrapper(<GraphsPage />),
     errorElement: <NotFoundPage />,
   },
   {
     path: '/profile',
-    element: pageWrapper(<Profile />),
+    element: PageWrapper(<Profile />),
     errorElement: <NotFoundPage />,
   },
 ]);
