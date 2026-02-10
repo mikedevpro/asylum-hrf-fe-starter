@@ -1,6 +1,6 @@
 import { Link, useRouteError } from 'react-router-dom';
 import React from 'react';
-import { pageWrapper } from '../../layout/PageWrapper.jsx';
+import { PageWrapper } from '../../layout/PageWrapper.jsx';
 
 export const NotFoundPage = () => {
   const error = useRouteError();
