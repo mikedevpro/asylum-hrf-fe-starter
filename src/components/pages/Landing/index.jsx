@@ -21,28 +21,6 @@ export const LandingPage = () => {
 
   return (
     <div className="min-h-screen w-full bg-white text-slate-900">
-      {/* NAV */}
-      <nav className="flex items-center justify-between px-10 py-4 bg-[#7a7765] text-white">
-        <button
-          type="button"
-          onClick={() => navigate('/')}
-          className="font-semibold tracking-wide"
-        >
-          Human Rights First
-        </button>
-
-        <div className="flex gap-8 text-sm">
-          <button type="button" onClick={() => navigate('/')}>
-            Home
-          </button>
-          <button type="button" onClick={() => navigate('/graphs')}>
-            Graphs
-          </button>
-          <button type="button" onClick={() => navigate('/login')}>
-            Log In
-          </button>
-        </div>
-      </nav>
 
       {/* HERO */}
       <section className="bg-[#7a7765] text-white text-center px-6 py-20">
@@ -82,7 +60,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('office')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={barGraph} alt="Grant rates by office" className="mx-auto mb-4" />
+            <img src={barGraph} alt="Grant rates by office" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
             <p className="font-serif">Search Grant Rates By Office</p>
           </button>
 
@@ -91,7 +69,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('nationality')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={pieChart} alt="Grant rates by nationality" className="mx-auto mb-4" />
+            <img src={pieChart} alt="Grant rates by nationality" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
             <p className="font-serif">Search Grant Rates By Nationality</p>
           </button>
 
@@ -100,7 +78,7 @@ export const LandingPage = () => {
             onClick={() => goToGraphs('time')}
             className="rounded-xl p-4 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400"
           >
-            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4" />
+            <img src={lineGraph} alt="Grant rates over time" className="mx-auto mb-4 w-full max-w-[220px] h-[160px] object-contain" />
             <p className="font-serif">Search Grant Rates Over Time</p>
           </button>
         </div>
@@ -129,7 +107,7 @@ export const LandingPage = () => {
           <img
             src={paperStack}
             alt="Stack of papers"
-            className="mx-auto max-h-64 w-full max-w-4xl object-cover rounded-2xl"
+            className="mx-auto max-h-52 w-full max-w-4xl object-cover rounded-2xl"
           />
         </div>
 
